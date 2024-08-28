@@ -294,7 +294,7 @@ app.post("/ussd", async function (req, res) {
         ${string2}`);
     },
     next: {
-      [next]: "exams",
+      1: "exams",
     },
   });
 

@@ -72,7 +72,7 @@ app.post("/ussd", async function (req, res) {
   menu.startState({
     run: () => {
       menu.con(
-        `Welcome to Nurse Portal:
+        `Welcome to Nurses' Portal:
           1. Proceed:
           0. Exit:`
       );
@@ -133,7 +133,7 @@ app.post("/ussd", async function (req, res) {
       const nurse = await checkRegistration(id, number);
       //console.log(nurse);
       if (!nurse) {
-        menu.end(`Sorry, Nurse with ID ${id} does not exist`);
+        menu.end(`Sorry, Nurse with ID "${id}" does not exist`);
       }
       await menu.session.set("nurse", nurse);
       menu.con(`Select Desired Service:

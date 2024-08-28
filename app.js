@@ -89,7 +89,7 @@ app.post("/ussd", async function (req, res) {
       menu.con(`Select a Service:
                    1.Nurse's-Profile
                    2.NCK-Offices
-                   3.Training-Institutions (Aproved)
+                   3.Training-Institutions (Approved)
                    4.Exams-Schedules
                    5.Registration-Status`);
     },
